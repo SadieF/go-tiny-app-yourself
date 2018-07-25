@@ -8,12 +8,18 @@
 </head>
 <body>
     <h1>Gophers</h1>
-
+<ul></ul>
     {{range .}}
 
-    <li>{{.ShortUrl}} - {{.LongUrl}}</li>
+    <li>{{.ShortURL}} - {{.LongURL}}</li>
 
     {{end}}
+</ul>
+<form action="urls" method="POST">
+    <input type="text" name="longUrl"/>
+    <input type="submit"/>
+</form>
 
+</body>
 </body>
 </html>
